@@ -28,3 +28,4 @@ server = smtplib.SMTP('smtp.gmail.com', port=587)
 server.starttls()
 server.login(Mensagem['from'], Senha)
 server.sendmail(Mensagem['from'],Mensagem['to'], Mensagem.as_string)
+server.quit
